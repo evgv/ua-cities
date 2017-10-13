@@ -1,0 +1,48 @@
+{
+    "cities": [
+        {
+            "name": "Kiev",
+            "population": "2,847,200"
+        },
+        {
+            "name": "Kharkiv",
+            "population": "1,470,902"
+        },    
+        {
+            "name": "Dnipro",
+            "population": "1,065,008"
+        },    
+        {
+            "name": "Odessa",
+            "population": "1,029,049"
+        },    
+        {
+            "name": "Donetsk",
+            "population": "1,016,194"
+        },    
+        {
+            "name": "Zaporizhia",
+            "population": "815,256"
+        },    
+        {
+            "name": "Lviv",
+            "population": "732,818"
+        },    
+        {
+            "name": "Kryvyi Rih",
+            "population": "668,980"
+        },    
+        {
+            "name": "Mykolaiv",
+            "population": "514,136"
+        },    
+        {
+            "name": "Mariupol",
+            "population": "492,176"
+        },   
+        {
+            "name": "Luhansk",
+            "population": "463,097"
+        }    
+    ]
+}
