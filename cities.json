@@ -2,47 +2,293 @@
     "cities": [
         {
             "name": "Kiev",
+            "subdivision": "Kiev",
             "population": "2,847,200"
         },
         {
             "name": "Kharkiv",
+            "subdivision": "Kharkiv Oblast",
             "population": "1,470,902"
         },    
         {
             "name": "Dnipro",
+            "subdivision": "Dnipropetrovsk Oblast",
             "population": "1,065,008"
         },    
         {
             "name": "Odessa",
+            "subdivision": "Odessa Oblast",
             "population": "1,029,049"
         },    
         {
             "name": "Donetsk",
+            "subdivision": "Donetsk Oblast",
             "population": "1,016,194"
         },    
         {
             "name": "Zaporizhia",
+            "subdivision": "Zaporizhia Oblast",
             "population": "815,256"
         },    
         {
             "name": "Lviv",
+            "subdivision": "Lviv Oblast",
             "population": "732,818"
         },    
         {
             "name": "Kryvyi Rih",
+            "subdivision": "Dnipropetrovsk Oblast",
             "population": "668,980"
         },    
         {
             "name": "Mykolaiv",
+            "subdivision": "Mykolaiv Oblast",
             "population": "514,136"
         },    
         {
             "name": "Mariupol",
+            "subdivision": "Donetsk Oblast",
             "population": "492,176"
         },   
         {
             "name": "Luhansk",
+            "subdivision": "Luhansk Oblast",
             "population": "463,097"
-        }    
+        },
+        {
+            "name": "Makiivka",
+            "subdivision": "Donetsk Oblast",
+            "population": "389,589"
+        },
+        {
+            "name": "Vinnytsia",
+            "subdivision": "Vinnytsia Oblast",
+            "population": "356,665"
+        },
+        {
+            "name": "Simferopol",
+            "subdivision": "Crimea",
+            "population": "343,644"
+        },
+        {
+            "name": "Sevastopol",
+            "subdivision": "Sevastopol",
+            "population": "342,451"
+        },
+        {
+            "name": "Kherson",
+            "subdivision": "Kherson Oblast",
+            "population": "328,360"
+        },
+        {
+            "name": "Poltava",
+            "subdivision": "Poltava Oblast",
+            "population": "317,998"
+        },
+        {
+            "name": "Chernihiv",
+            "subdivision": "Chernihiv Oblast",
+            "population": "304,994"
+        },
+        {
+            "name": "Cherkasy",
+            "subdivision": "Cherkasy Oblast",
+            "population": "295,414"
+        },
+        {
+            "name": "Sumy",
+            "subdivision": "Sumy Oblast",
+            "population": "293,141"
+        },
+        {
+            "name": "Horlivka",
+            "subdivision": "Donetsk Oblast",
+            "population": "292,250"
+        },
+        {
+            "name": "Zhytomyr",
+            "subdivision": "Zhytomyr Oblast",
+            "population": "284,236"
+        },
+        {
+            "name": "Kamianske",
+            "subdivision": "Dnipropetrovsk Oblast",
+            "population": "255,841"
+        },
+        {
+            "name": "Kropyvnytskyi",
+            "subdivision": "Kirovohrad Oblast",
+            "population": "254,103"
+        },
+        {
+            "name": "Khmelnytskyi",
+            "subdivision": "Khmelnytskyi Oblast",
+            "population": "253,994"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Chernivtsi",
+            "subdivision": "Chernivtsi Oblast",
+            "population": "240,621"
+        },
+        {
+            "name": "Kremenchuk",
+            "subdivision": "Poltava Oblast",
+            "population": "234,073"
+        },
+        {
+            "name": "Ternopil",
+            "subdivision": "Ternopil Oblast",
+            "population": "227,755"
+        },
+        {
+            "name": "Ivano-Frankivsk",
+            "subdivision": "Ivano-Frankivsk Oblast",
+            "population": "218,359"
+        },
+        {
+            "name": "Bila Tserkva",
+            "subdivision": "Kiev Oblast",
+            "population": "200,131"
+        },
+        {
+            "name": "Kramatorsk",
+            "subdivision": "Donetsk Oblast",
+            "population": "181,025"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        },
+        {
+            "name": "Rivne",
+            "subdivision": "Rivne Oblast",
+            "population": "248, 813"
+        }
     ]
 }
