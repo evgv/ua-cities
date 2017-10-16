@@ -35,7 +35,7 @@ function init() {
                     if (result === true) {
 
                         var div = document.createElement('div');
-                            div.innerHTML = '<li><b>' + element.name + '</b> <p>In ' + element.subdivision + ', population is '+ element.population + '</p></li>';
+                            div.innerHTML = '<li><a href="//google.com/search?q=' + element.name + '" target="_blank" class="city-name"><b>' + element.name + '</b></a> <p>In ' + element.subdivision + ', population is '+ element.population + ', status "' + element.status + '"</p></li>';
 
                         while (div.children.length > 0) {
                             resultWrapper.appendChild(div.children[0]);

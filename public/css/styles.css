@@ -1,3 +1,14 @@
 #search-result {
     list-style-type: none;
+    
+    overflow: overlay;
+    height: 195px;
+}
+
+a.city-name {
+    all: unset;
+}
+
+a.city-name:hover {
+    color:#0FA0CE;
 }
