@@ -9,6 +9,10 @@
     height: 195px;
 }
 
+.city-wrap {
+    padding-right: 5px;
+}
+
 a.city-name {
     all: unset;
 }
