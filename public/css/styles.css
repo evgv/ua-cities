@@ -1,5 +1,5 @@
 #city-form {
-    margin: 25% 10%;
+    margin: 25%;
 }
 
 #search-result {
@@ -19,4 +19,18 @@ a.city-name {
 
 a.city-name:hover {
     color:#0FA0CE;
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+    #city-form {
+        margin: 25% 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    #city-form {
+        margin: 25% 15%;
+    }
 }
