@@ -1,3 +1,14 @@
+define(['../lib/vue'], function (Vue) {
+    
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+    
+});
+
 define(['json'], function (json) {
     
     json.load(function (response) {
@@ -30,5 +41,3 @@ define(['json'], function (json) {
         });
     });
 });
-
-console.log(2);
