@@ -36,12 +36,23 @@
         <!-- Primary Page Layout
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         
-        <div id="app">
-          {{ message }}
+                    
+                    
+        <div id="app" class="container">
+            <form id="city-form">
+                <div class="row">
+                    <div class="twelve columns">
+                        <h4><b>Ukraine cities</b></h4>
+                        <label for="city">Type to start search</label>
+                        <input v-on:keyup="search(this)" v-model="query" class="u-full-width" type="text" placeholder="City name" name="city" id="city">
+                        <ul id="search-result"></ul>
+                    </div>
+                </div>
+            </form>
         </div>
         
         
-        <div class="container">
+<!--        <div class="container">
             <form id="city-form">
                 <div class="row">
                     <div class="twelve columns">
@@ -52,7 +63,7 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </div>-->
         
         <!-- End Document
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->

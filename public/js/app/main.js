@@ -3,7 +3,42 @@ define(['../lib/vue'], function (Vue) {
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            query: null,
+            json: null
+        },
+        created: function () {
+            fetch("../public/cities.json")
+                .then(r => r.json())
+                .then(json => {
+                    this.json=json;
+                });
+        },
+        methods: {
+            search: function () {
+                console.log(this.query);
+                
+                var query = this.value;
+                if (query.length) {
+                    resultWrapper.innerHTML = '';
+
+                    json.cities.forEach(function(element) {
+                        var pattern = new RegExp('^' + query, 'i');
+                        var result  = pattern.test(element.name);
+
+                        if (result === true) {
+
+                            var div = document.createElement('div');
+                                div.innerHTML = '<li class="city-wrap"><a href="//google.com/search?q=' + element.name + '" target="_blank" class="city-name"><b>' + element.name + '</b></a> <p>In ' + element.subdivision + ', population is '+ element.population + '"</p></li>';
+
+                            while (div.children.length > 0) {
+                                resultWrapper.appendChild(div.children[0]);
+                            }
+                        }
+                    });
+                } else {
+                    resultWrapper.innerHTML = '';
+                }
+            }
         }
     });
     
