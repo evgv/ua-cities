@@ -1,78 +1,34 @@
 define(['../lib/vue'], function (Vue) {
     
+    'use strict';
+    
     var app = new Vue({
         el: '#app',
         data: {
+            pattern: null,
             query: null,
-            json: null
+            json: null,
+            cities: []
         },
         created: function () {
             fetch("../public/cities.json")
-                .then(r => r.json())
-                .then(json => {
-                    this.json=json;
-                });
+                .then(resonse => resonse.json())
+                .then(json => { this.json = json; });
         },
         methods: {
             search: function () {
-                console.log(this.query);
                 
-                var query = this.value;
-                if (query.length) {
-                    resultWrapper.innerHTML = '';
-
-                    json.cities.forEach(function(element) {
-                        var pattern = new RegExp('^' + query, 'i');
-                        var result  = pattern.test(element.name);
-
-                        if (result === true) {
-
-                            var div = document.createElement('div');
-                                div.innerHTML = '<li class="city-wrap"><a href="//google.com/search?q=' + element.name + '" target="_blank" class="city-name"><b>' + element.name + '</b></a> <p>In ' + element.subdivision + ', population is '+ element.population + '"</p></li>';
-
-                            while (div.children.length > 0) {
-                                resultWrapper.appendChild(div.children[0]);
-                            }
-                        }
-                    });
-                } else {
-                    resultWrapper.innerHTML = '';
+                app.cities = [];
+                
+                if (this.query.length) {
+                    
+                    app.pattern = new RegExp('^' + this.query, 'i');
+                    
+                    app.cities  = app.json.cities.filter(city => app.pattern.test(city.name));
+                    app.cities.map(city => (city.url = ('//google.com/search?q=' + city.name)));
                 }
             }
         }
     });
     
-});
-
-define(['json'], function (json) {
-    
-    json.load(function (response) {
-
-        var json = JSON.parse(response),
-            resultWrapper = document.getElementById("search-result");
-
-        document.getElementById("city").addEventListener('keyup', function() {
-            var query = this.value;
-            if (query.length) {
-                resultWrapper.innerHTML = '';
-
-                json.cities.forEach(function(element) {
-                    var pattern = new RegExp('^' + query, 'i');
-                    var result  = pattern.test(element.name);
-
-                    if (result === true) {
-
-                        var div = document.createElement('div');
-                            div.innerHTML = '<li class="city-wrap"><a href="//google.com/search?q=' + element.name + '" target="_blank" class="city-name"><b>' + element.name + '</b></a> <p>In ' + element.subdivision + ', population is '+ element.population + '"</p></li>';
-
-                        while (div.children.length > 0) {
-                            resultWrapper.appendChild(div.children[0]);
-                        }
-                    }
-                });
-            } else {
-                resultWrapper.innerHTML = '';
-            }
-        });
-    });
 });

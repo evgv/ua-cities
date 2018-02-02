@@ -35,8 +35,6 @@
 
         <!-- Primary Page Layout
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        
-                    
                     
         <div id="app" class="container">
             <form id="city-form">
@@ -44,26 +42,17 @@
                     <div class="twelve columns">
                         <h4><b>Ukraine cities</b></h4>
                         <label for="city">Type to start search</label>
-                        <input v-on:keyup="search(this)" v-model="query" class="u-full-width" type="text" placeholder="City name" name="city" id="city">
-                        <ul id="search-result"></ul>
+                        <input v-on:keyup="search()" v-model="query" class="u-full-width" type="text" placeholder="City name" name="city" id="city">
+                        <ul id="search-result">
+                            <li class="city-wrap" v-for="city in cities">
+                                <a v-bind:href="city.url" target="_blank" class="city-name"><b>{{ city.name }}</b></a> 
+                                <p>In {{ city.subdivision }}, population is {{ city.population }}"</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </form>
         </div>
-        
-        
-<!--        <div class="container">
-            <form id="city-form">
-                <div class="row">
-                    <div class="twelve columns">
-                        <h4><b>Ukraine cities</b></h4>
-                        <label for="city">Type to start search</label>
-                        <input class="u-full-width" type="text" placeholder="City name" name="city" id="city">
-                        <ul id="search-result"></ul>
-                    </div>
-                </div>
-            </form>
-        </div>-->
         
         <!-- End Document
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
