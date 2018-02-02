@@ -19,6 +19,7 @@ a.city-name {
 
 a.city-name:hover {
     color:#0FA0CE;
+    cursor: pointer;
 }
 
 /* Media */

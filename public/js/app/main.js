@@ -5,6 +5,7 @@ define(['../lib/vue'], function (Vue) {
     var app = new Vue({
         el: '#app',
         data: {
+            loading: false,
             pattern: null,
             query: null,
             json: null,
