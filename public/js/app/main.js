@@ -5,7 +5,7 @@ define(['../lib/vue'], function (Vue) {
     var app = new Vue({
         el: '#app',
         data: {
-            loading: false,
+            loading: true,
             pattern: null,
             query: null,
             json: null,
@@ -14,7 +14,7 @@ define(['../lib/vue'], function (Vue) {
         created: function () {
             fetch("../public/cities.json")
                 .then(resonse => resonse.json())
-                .then(json => { this.json = json; });
+                .then(json => { this.json = json; this.loading = false; })
         },
         methods: {
             search: function () {
