@@ -1,4 +1,4 @@
-define(['../lib/vue', '../lib/requirejs-base64/base64'], function (Vue, base64) {
+define(['lib/vue', 'lib/requirejs-base64/base64'], function (Vue, base64) {
     
     'use strict';
     
@@ -12,7 +12,7 @@ define(['../lib/vue', '../lib/requirejs-base64/base64'], function (Vue, base64) 
             cities: []
         },
         created: function () {
-            fetch("../public/cities.json")
+            fetch("cities.json")
                 .then(resonse => resonse.json())
                 .then(json => { this.json = json; this.loading = false; });
         },
